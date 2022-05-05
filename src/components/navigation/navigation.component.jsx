@@ -11,8 +11,8 @@ function Nav() {
                 <a href='https://socialcops.com' onClick={(e) => {e.preventDefault();}}><img className='logo' src={ipl} alt='Logo'/></a>
             </div>
             <div className='nav-link-container'>
-                <a href='https://pawankolhe.com' onClick={(e) => {e.preventDefault();}}><i className="fas fa-home-alt"></i> <span className='nav-link-name'>Dashboard</span></a>
-                <a href='https://pawankolhe.com' onClick={(e) => {e.preventDefault();}}><i className="fas fa-question"></i> <span className='nav-link-name'>FAQs</span></a>
+                <a href='https://github.com/theAdarshSrivastava/Ipl_Vis' onClick={(e) => {e.preventDefault();}}><i className="fas fa-home-alt"></i> <span className='nav-link-name'>Dashboard</span></a>
+                <a href='https://github.com/theAdarshSrivastava/Ipl_Vis' onClick={(e) => {e.preventDefault();}}><i className="fas fa-question"></i> <span className='nav-link-name'>FAQs</span></a>
             </div>
         </nav>
     )

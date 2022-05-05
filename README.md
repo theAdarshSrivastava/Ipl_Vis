@@ -1,4 +1,4 @@
-# Front End Engineer Challenge – IPL
+# Information Visualization Course Project
 
 A data visualization challenge to build a web app with IPL (Indian Premier League) data provided in CSV files. Goal was to present stats and interesting information about IPL to someone who knows about cricket but has not seen IPL.
 
