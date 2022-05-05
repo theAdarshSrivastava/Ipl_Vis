@@ -18,9 +18,6 @@ A data visualization challenge to build a web app with IPL (Indian Premier Leagu
 ## Dataset
   - [Click Here](https://www.kaggle.com/harsha547/indian-premier-league-csv-dataset)  
 
-## Link to Hosted Website
-  - [Click Here](https://socialcops.netlify.com)  
-  *(Hosted on Netlify)*
 
 ## Bonus Points Explanation
   - I used React instead of Vue solely because I'm more familiar with React, although I'm very keen on learning Vue as well.
