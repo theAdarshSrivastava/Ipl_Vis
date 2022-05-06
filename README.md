@@ -55,7 +55,7 @@ A data visualization challenge to build a web app with IPL (Indian Premier Leagu
   - Make a trivia using this data to make the web app more fun and interactive.
   - Light or Dark Mode may be added.
 
-## Contributions
+## Contributors
 
 <a href="https://github.com/theAdarshSrivastava/Ipl_Vis/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=theAdarshSrivastava/Ipl_Vis" />
