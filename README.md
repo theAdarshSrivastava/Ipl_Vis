@@ -6,6 +6,10 @@ A data visualization challenge to build a web app with IPL (Indian Premier Leagu
   - Responsive Design
   - Mobile friendly
 
+## Project Screenshot
+
+![img1](src/img/1.png)
+
 ![Screetshot of Project](https://ibb.co/BKQtW0p)
 
 ## Built With
