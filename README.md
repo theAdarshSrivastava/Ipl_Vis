@@ -6,13 +6,6 @@ A data visualization challenge to build a web app with IPL (Indian Premier Leagu
   - Responsive Design
   - Mobile friendly
 
-## Project Screenshot
-
-![img1](src/img/1.png)
-![img2](src/img/2.png)
-![img3](src/img/3.png)
-![img4](src/img/4.png)
-
 ## Built With
   - [React](https://reactjs.org/) - the web framework used
   - [Chart.js](https://www.chartjs.org/) - used to create charts
@@ -41,6 +34,13 @@ A data visualization challenge to build a web app with IPL (Indian Premier Leagu
   - The top bar seemed empty, so I added a search bar that would fit in with the design scheme.
   - Used Poppins and Lato as fonts for this challenge, both being popular and modern choices. For the icons I used Font Awesome Pro.
   - I decided to add a fullscreen toggle button in the header bar because an admin panel is best viewed in fullscreen. Less clutter, the better. :)
+
+## Project Screenshot
+
+![img1](src/img/1.png)
+![img2](src/img/2.png)
+![img3](src/img/3.png)
+![img4](src/img/4.png)
   
 ## Potential New Features/Improvements
   - Storing parsed JSON data in database for faster reading.
