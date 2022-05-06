@@ -42,3 +42,4 @@ A data visualization challenge to build a web app with IPL (Indian Premier Leagu
   - Can add a loading animation while the data and graphs are loading.
   - Display more data related to players such as who won the most purple caps?
   - Make a trivia using this data to make the web app more fun and interactive.
+  - Light or Dark Mode can be added.
