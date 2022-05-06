@@ -6,7 +6,7 @@ A data visualization challenge to build a web app with IPL (Indian Premier Leagu
   - Responsive Design
   - Mobile friendly
 
-![Screetshot of Project](https://i.ibb.co/6mLkWZm/Screenshot-from-2022-05-05-22-37-06.png)
+![Screetshot of Project](https://ibb.co/BKQtW0p)
 
 ## Built With
   - [React](https://reactjs.org/) - the web framework used
