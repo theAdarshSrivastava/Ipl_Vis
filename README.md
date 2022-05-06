@@ -54,3 +54,9 @@ A data visualization challenge to build a web app with IPL (Indian Premier Leagu
   - Display more data related to players such as who won the most purple caps?
   - Make a trivia using this data to make the web app more fun and interactive.
   - Light or Dark Mode may be added.
+
+## Contributions
+
+<a href="https://github.com/theAdarshSrivastava/Ipl_Vis/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=theAdarshSrivastava/Ipl_Vis" />
+</a>
