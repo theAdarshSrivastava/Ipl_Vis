@@ -1,5 +1,11 @@
 # Information Visualization Course Project
 
+![CSS3](https://img.shields.io/badge/-CSS3-white?style=flat-square&logo=CSS3)
+![React.js](https://img.shields.io/badge/-React.js-white?style=flat-square&logo=React.js)
+![Chart.js](https://img.shields.io/badge/-Chart.js-white?style=flat-square&logo=Chart.js)
+![D3.js](https://img.shields.io/badge/-D3.js-white?style=flat-square&logo=D3.js)
+![HTML5](https://img.shields.io/badge/-HTML5-white?style=flat-square&logo=HTML5)
+
 A data visualization challenge to build a web app with IPL (Indian Premier League) data provided in CSV files. Goal was to present stats and interesting information about IPL to someone who knows about cricket but has not seen IPL.
 
   - Great UI/UX
