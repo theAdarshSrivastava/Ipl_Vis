@@ -9,13 +9,9 @@
     left: 0px;
     right: 0px;
     top: 0px;
-    padding-left: 200px;
     z-index: 100;
 }
 
-.padding-left-reduce{
-    padding-left: 60px;
-}
 
 .left-bar{
     display: flex;
@@ -68,6 +64,8 @@
 .profile-pic-container img {
     width: 100%
 }
+
+
 
 .username i {
     padding-left: 3px;
@@ -155,6 +153,7 @@
 .sf-sticky-bar-container{
     padding: 8px 0px;
     height: 100%;
+    margin-left: 1170px;
 }
 
 .user-menu {

@@ -1,13 +1,13 @@
 .infobox {
     height: 180px;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 20px 20px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.06), 0 3px 6px rgba(0,0,0,0.13);
     position: relative;
     min-width: 0;
     color: #fff;
 
-    background: linear-gradient(135deg, #343D45, rgb(72, 80, 87));
+    background: linear-gradient(135deg, #97c8f4, rgb(26, 138, 236));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,7 +41,7 @@
 
 .infobox-data {
     font-size: 3rem;
-    color: #FED107;
+    color: #fff;
     font-weight: bold;
     font-family: 'Lato', sans-serif;
 }

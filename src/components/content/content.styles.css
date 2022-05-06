@@ -19,8 +19,8 @@
 .content-container {
     flex: 1;
     margin-top: 60px;
-    margin-left: 200px;
     overflow-y: auto;
+    background-color: rgb(197, 233, 239);
 }
 
 .margin-left-reduce {
@@ -33,9 +33,37 @@
 
 .title-container h1{
     font-weight: 300;
-    color: #424A52;
+    color: #3A80FD;
     margin-bottom: 0px;
     margin-top: 0px;
+}
+
+.team{
+    border: #3A80FD;
+    border-style: double;
+    border-width: 3px;
+    box-shadow: 2px;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 600px;
+    display: inline-block;
+}
+
+.mentors{
+    border: #3A80FD;
+    border-style: double;
+    border-width: 3px;
+    box-shadow: 2px;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 600px;
+    display: inline-block;
+    float: right;
+    height: 275px;
 }
 
 .bold {

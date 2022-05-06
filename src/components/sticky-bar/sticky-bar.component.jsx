@@ -1,14 +1,14 @@
 import React from 'react';
 import './sticky-bar.styles.css';
-import user from '../../img/user.jpg';
+import IPL from '../../img/logo-ipl.png'
 
 class StickyBar extends React.Component {
     render(){
         return (
             <div className='sticky-bar'>
                 <div className='left-bar'>
-                    <button aria-label='Navigation Toggle' className='nav-toggle-button'><i className="fas fa-align-left fa-2x"></i></button>
-                    <div className='sf-sticky-bar-container'>
+                    <img src={IPL} height={60} width={140}></img>
+                     <div className='sf-sticky-bar-container'>
                         <input aria-label='Search' className='search-field sf-sticky-bar' placeholder='Search' />
                     </div>
                 </div>

@@ -4,6 +4,8 @@ import Papa from 'papaparse';
 import InfoBox from '../info-box/info-box.component';
 import ChartDisplay from '../chart-display/chart-display.component';
 
+import IPL from "../../img/logo-ipl.png"
+
 import './content.styles.css';
 
 class Content extends React.Component {
@@ -19,10 +21,10 @@ class Content extends React.Component {
             chartData8: {},
             rawMatch: {},
             rawPlayer: {},
-            rawBallByBall: {}
-            /*rawSeason: {},
+            rawBallByBall: {},
+            rawSeason: {},
             rawTeam: {},
-            rawPlayerMatch: {},*/
+            rawPlayerMatch: {}
         };
     }
 
@@ -50,9 +52,24 @@ class Content extends React.Component {
             dynamicTyping: true,
             complete: this.saveBallByBall
         });
-        /*Papa.parse('./ipl-csv-dataset/Season.csv', {header: true, download: true, dynamicTyping: true, complete: this.saveSeason});
-        Papa.parse('./ipl-csv-dataset/Team.csv', {header: true, download: true, dynamicTyping: true, complete: this.saveTeam});
-        Papa.parse('./ipl-csv-dataset/Player_Match.csv', {header: true, download: true, dynamicTyping: true, complete: this.savePlayerMatch});*/
+        Papa.parse('./ipl-csv-dataset/Season.csv', {
+            header: true, 
+            download: true, 
+            dynamicTyping: true, 
+            complete: this.saveSeason
+        });
+        Papa.parse('./ipl-csv-dataset/Team.csv', {
+            header: true, 
+            download: true, 
+            dynamicTyping: true, 
+            complete: this.saveTeam
+        });
+        Papa.parse('./ipl-csv-dataset/Player_Match.csv', {
+            header: true, 
+            download: true, 
+            dynamicTyping: true, 
+            complete: this.savePlayerMatch
+        });
     }
 
     // Saving JSON data to state and calling associated functions to process data
@@ -75,9 +92,9 @@ class Content extends React.Component {
         this.dataForChart8();
         this.dataForInfoBox3and4();
     }
-    /*saveSeason = (result) => {this.setState({rawSeason: result});}
+    saveSeason = (result) => {this.setState({rawSeason: result});}
     saveTeam = (result) => {this.setState({rawTeam: result});}
-    savePlayerMatch = (result) => {this.setState({rawPlayerMatch: result});}*/
+    savePlayerMatch = (result) => {this.setState({rawPlayerMatch: result});}
 
     dataForChart1 = () => {
         // Bat or Field Decision
@@ -387,6 +404,60 @@ class Content extends React.Component {
         }
     }
 
+    // dataForChart9 = () => {
+    //     // Orange Cap winner in each season
+
+    //     // if(Object.keys(this.state.rawBallByBall).length !== 0) {
+    //     //     this.state.rawBallByBall.data.forEach(element => {
+    //     //         if(averages[element.Over_Id] !== undefined && element.Batsman_Scored !== 'Do_nothing' && element.Batsman_Scored !== ' ') {
+    //     //             averages[element.Over_Id] = { sum : averages[element.Over_Id].sum + element.Batsman_Scored, count : averages[element.Over_Id].count + 1 };
+    //     //         } else if(element.Over_Id !== undefined && element.Batsman_Scored !== 'Do_nothing' && element.Batsman_Scored !== ' ') {
+    //     //             averages[element.Over_Id] = { sum : element.Batsman_Scored, count : 1 };
+    //     //         }
+    //     //     });
+
+    //     //     Object.entries(averages).forEach(element => {
+    //     //         console.log(element);
+    //     //         averages[element[0]] = parseFloat(element[1].sum) / element[1].count;
+    //     //     });
+
+    //         this.setState({
+    //             chartData9: {
+    //                 labels: [...Object.keys()],
+    //                 datasets: [
+    //                     {
+    //                         label: 'Orange Cap Winner Each Season',
+    //                         data: [...Object.values(averages)],
+    //                         backgroundColor: [
+    //                             'rgba(255, 99, 132, 0.5)',
+    //                             'rgba(54, 162, 235, 0.5)',
+    //                             'rgba(245, 135, 31, 0.5)',
+    //                             'rgba(128, 203, 174, 0.5)',
+    //                             'rgba(255, 99, 132, 0.5)',
+    //                             'rgba(54, 162, 235, 0.5)',
+    //                             'rgba(255, 206, 86, 0.5)',
+    //                             'rgba(75, 192, 192, 0.5)',
+    //                             'rgba(153, 102, 255, 0.5)'
+    //                         ],
+    //                         borderColor: [
+    //                             'rgba(255, 99, 132, 1)',
+    //                             'rgba(54, 162, 235, 1)',
+    //                             'rgba(245, 135, 31, 1)',
+    //                             'rgba(128, 203, 174, 1)',
+    //                             'rgba(255, 99, 132, 1)',
+    //                             'rgba(54, 162, 235, 1)',
+    //                             'rgba(255, 206, 86, 1)',
+    //                             'rgba(75, 192, 192, 1)',
+    //                             'rgba(153, 102, 255, 1)'
+    //                         ],
+    //                         borderWidth: 1
+    //                     }
+    //                 ]
+    //             }
+    //         });
+    //         this.forceUpdate();
+    //     }
+    // }
     dataForChart8 = () => {
         // Types of Dismissals
         var dismissalType = {};
@@ -495,8 +566,9 @@ class Content extends React.Component {
 
         return (
             <div className='content-container'>
+                <center><img src={IPL}></img></center>
                 <div className='title-container'>
-                    <h1><span className='bold'>Indian Premier League</span> Statistics</h1>
+                    <center><h1 className='bold'>--------------|  Indian Premier League Statistics |---------------</h1></center>
                 </div>
                 <div className='infobox-container'>
                     <InfoBox data={this.state.infoBox1} title='Total Matches' icon={<i className="fas fa-cricket fa-4x"></i>} text='Matches played till now.' />
@@ -550,6 +622,21 @@ class Content extends React.Component {
                         displayLegend={false} chartData={this.state.chartData8} 
                         titleText='Player Dismissal Types' 
                     />
+                </div>
+                <center><h2>Made By: Team VizGroup
+                </h2>
+                </center>
+                <div className='team' >
+                <h3>Team Details:</h3>
+                <h4>Ankit Mathur(RA1911026010088) - CSE-AIML</h4>
+                <h4>Adarsh Srivastava(RA1911026010081) - CSE-AIML</h4>
+                <h4>Harishankar P V(RA1911027010022) - CSE-BD</h4>
+                <h4>Yash Batra(RA1911003010294) - CSE-Core</h4>
+                </div>
+                <div className='mentors' >
+                <h3>Mentor's Details: </h3>
+                <h4>Dr. V. Kavitha (Department of CSBS)</h4>
+                <h4>Dr. Debajyoti Mondal (University of Saskatchewan)</h4>
                 </div>
             </div>
         )

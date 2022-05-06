@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 
 import StickyBar from './components/sticky-bar/sticky-bar.component';
-import Nav from './components/navigation/navigation.component';
 import Content from './components/content/content.component';
 
 class App extends Component {
@@ -16,7 +15,6 @@ class App extends Component {
         <div className="App">
             <StickyBar />
             <div className='middle'>
-              <Nav />
               <Content />
             </div>
         </div>
